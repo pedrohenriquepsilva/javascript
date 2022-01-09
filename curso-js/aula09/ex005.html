@@ -26,13 +26,30 @@
         Aprendendo a usar <strong>DOM</strong> em JavaScript
     </p>
 
-    <div>
+    <div class="msg">
         Clique em mim
     </div>
 
     <script>
 
+        var corpo = document.body
+        var p1 = document.getElementsByTagName('p')[1]
+        /*
+        var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando'
+        */
         
+        var p = document.querySelectorAll('p')[1]
+        p.style.fontStyle = 'italic'
+        p.style.fontWeight = 'bolder'
+        p.style.color = 'darkblue'
+
+        var d = document.querySelector('div.msg')
+        d.style.backgroundColor = 'black'
+        d.style.height = '100px'
+        d.style.textAlign = 'center'
+        d.style.borderRadius = '20px'
 
     </script>
 
